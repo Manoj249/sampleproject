@@ -3,9 +3,9 @@ output "vpc_id" {
 }
 
 output "public_subnet_cidr" {
-  value = module.vpc.public.id
+  value = module.vpc.public_subnet.id
 }
 
 output "private_subnet_cidr" {
-  value = module.vpc.private.id
+  value = module.vpc.private_subnet.id
 }
