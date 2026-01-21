@@ -40,7 +40,7 @@ resource "aws_subnet" "private" {
   tags = {
     Name = "${var.project_name}-private_subnet"
   }
-}
+} 
 
 # Public Route Table (Internet access)
 resource "aws_route_table" "public" {
