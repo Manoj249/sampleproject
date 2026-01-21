@@ -14,7 +14,7 @@ permissions:
 jobs:
   terraform:
     runs-on: ubuntu-latest
-    environment: production    # enables manual approval before apply
+    environment: dev    # enables manual approval before apply for prod env
  
     steps:
       - name: Checkout
