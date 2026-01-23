@@ -27,3 +27,15 @@ variable "private_subnet_cidr" {
   description = "Private subnet CIDR block"
   type = string
 }
+
+variable "my_ip" {
+  type = string
+}
+
+variable "ami_id" {
+  type = string
+}
+
+variable "instance_type" {
+  type = string
+}
