@@ -21,3 +21,7 @@ variable "instance_type" {
 variable "my_ip" {
   type = string
 }
+
+variable "key_name" {
+  type = string
+}

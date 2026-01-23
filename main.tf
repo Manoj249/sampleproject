@@ -15,4 +15,5 @@ module "iam_ec2" {
   my_ip = var.my_ip
   ami_id = var.ami_id
   instance_type = var.instance_type
+  key_name = var.key_name
 }
