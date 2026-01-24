@@ -18,10 +18,18 @@ variable "instance_type" {
     type = string
 }
 
-variable "my_ip" {
-  type = string
+variable "ingress_rules" {
+  description = "Ingress rules for EC2"
+  type = map(object({
+    description = string
+    from_port = number
+    to_port = number
+    protocol = string
+    cidr_blocks = list(string)
+  }))
 }
 
 variable "key_name" {
   type = string
 }
+
