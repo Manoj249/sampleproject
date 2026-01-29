@@ -18,7 +18,7 @@ module "iam_ec2" {
   ingress_rules = var.ingress_rules
 }
 
-# module "s3" {
-#   source = "./modules/S3"
-#   bucket_name = var.s3_bucket_name
-# }
+module "s3" {
+  source = "./modules/S3"
+  bucket_name = var.s3_bucket_name
+}
