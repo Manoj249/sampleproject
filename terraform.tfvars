@@ -25,3 +25,5 @@ ingress_rules = {
         cidr_blocks = ["0.0.0.0/0"]
     }
   }
+
+s3_bucket_name = "terraform-demo-week3-state-bucket"

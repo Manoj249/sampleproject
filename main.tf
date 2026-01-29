@@ -17,3 +17,8 @@ module "iam_ec2" {
   key_name = var.key_name
   ingress_rules = var.ingress_rules
 }
+
+module "s3" {
+  source = "./modules/S3"
+  bucket_name = var.s3_bucket_name
+}
