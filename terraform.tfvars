@@ -26,4 +26,4 @@ ingress_rules = {
     }
   }
 
-s3_bucket_name = "terraform-demo-week3-state-bucket1"
+s3_bucket_name = "terraform-demo-week3-state-bucket"
