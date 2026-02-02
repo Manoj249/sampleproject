@@ -26,4 +26,5 @@ module "s3" {
 module "dynamodb_lock" {
   source = "./modules/dynamodb"
   table_name = var.dynamodb_table_name
-} 
+
+}
