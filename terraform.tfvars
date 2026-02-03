@@ -27,4 +27,4 @@ ingress_rules = {
   }
 
 s3_bucket_name = "terraform-demo-week3-state-bucket"
-# dynamodb_table_name = "terraform-state-lock"
+dynamodb_table_name = "terraform-state-lock"
