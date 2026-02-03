@@ -14,7 +14,7 @@ ingress_rules = {
         from_port  = 22
         to_port = 22
         protocol = "tcp"
-        cidr_blocks = ["10.168.72.137/32"]
+        cidr_blocks = ["118.185.178.192/32"]
     },
 
     http = {
