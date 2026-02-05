@@ -58,3 +58,7 @@ variable "s3_bucket_name" {
 # variable "dynamodb_table_name" {
 #   type = string
 # }
+
+variable "alarm_email" {
+  type = string
+}

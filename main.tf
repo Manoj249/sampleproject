@@ -28,3 +28,9 @@ module "s3" {
 #   table_name = var.dynamodb_table_name
 
 # }
+
+module "cloudwatch" {
+  source = "./modules/cloudwatch"
+  instance_id = module.iam_ec2.ec2_instance_id
+  alarm_email = var.alarm_email
+}

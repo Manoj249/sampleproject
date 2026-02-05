@@ -22,3 +22,15 @@ output "s3_bucket_name" {
 # output "dynamodb_table_name" {
 #   value = module.dynamodb_lock.table_name
 # }
+
+output "cpu_alarm_name" {
+  value = module.cloudwatch.alarm_name
+}
+
+output "cpu_alarm_arn" {
+  value = module.cloudwatch.alarm_arn
+}
+
+output "sns_topic_arn" {
+  value = module.cloudwatch.sns_topic_arn
+}
