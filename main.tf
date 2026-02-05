@@ -21,7 +21,7 @@ module "iam_ec2" {
 module "s3" {
   source = "./modules/S3"
   bucket_name = var.s3_bucket_name
-}
+} 
 
 # module "dynamodb_lock" {
 #   source = "./modules/dynamodb"
