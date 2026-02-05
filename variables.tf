@@ -15,26 +15,26 @@ variable "az" {
 
 variable "vpc_cidr" {
   description = "VPC CIDR block"
-  type = string
+  type        = string
 }
 
 variable "public_subnet_cidr" {
   description = "Public subnet CIDR block"
-  type = string
+  type        = string
 }
 
 variable "private_subnet_cidr" {
   description = "Private subnet CIDR block"
-  type = string
+  type        = string
 }
 
 variable "ingress_rules" {
   description = "ingress rules for EC2 "
   type = map(object({
     description = string
-    from_port = number
-    to_port = number
-    protocol = string
+    from_port   = number
+    to_port     = number
+    protocol    = string
     cidr_blocks = list(string)
   }))
 }

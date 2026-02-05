@@ -16,7 +16,7 @@ output "ec2_instance_id" {
 
 output "s3_bucket_name" {
   description = "s3 bucket name created via s3 module"
-  value = module.s3.bucket_name
+  value       = module.s3.bucket_name
 }
 
 # output "dynamodb_table_name" {
